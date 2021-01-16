@@ -1,11 +1,11 @@
-<html>
+<!DOCTYPE html>
 <head>
         <title>My GitHub Page built with HTML</title>
-        <meta name="Author" content="Aven Huang">
-        <link>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
 </head>
 <body>
-     <main>
+     <main property="s">
              <header>
                 <nav>
                         <aside>My Links: </aside>
@@ -14,9 +14,9 @@
                 </nav>
                 <h1>Aven Huang's Page</h1>
                 <h2>Create Date: Jan 15 2021</h2>
-                <h3>My motto: <pre>Work hard, play hard</pre></h3>
+                <div>My motto: <pre>Work hard, play hard</pre></div>
              </header> 
-             <section id="About Me">
+             <section id="AboutMe">
                      <div>
                         <h1>About Me</h1>
                         <p>
@@ -31,11 +31,11 @@
                 </div>
                 <div>
                         <form>
-                                <label for="name">Full Name: </label><br>
+                                <label >Full Name: </label><br>
                                 <input type="text"><br>
-                                <label for="major">Major:</label><br>
+                                <label >Major:</label><br>
                                 <input type="text"><br>
-                                <label for="Email">Email:</label><br>
+                                <label >Email:</label><br>
                                 <input type="email"><br>
                                 <label>Phone Number: </label><br>
                                 <input type="tel"><br>
@@ -90,66 +90,67 @@
                                 <input type="file"><br>
                                 <label>Any Questions/Comments: </label><br>
                                 <textarea rows="5" cols="30"></textarea><br>
-                                <button>
-                                        <input type="reset"><br>
-                                </button>
-                                <button>
-                                        <input type="submit">
-                                </button>
+                                <input type="reset">
+                                <button type="button">Submit</button>
                                 
 
                         </form>
                 </div>
              </section>
-             <section id="course highlight">
+             <section>
                      <div>
                         <h1>Course Highlight</h1>
                         <ul>
                                 <li><strong>CSE Courses:</strong></li>
-                                <p>
+                        </ul>
+                                <span>
                                 CSE course with mathmatical focus really trained
                                 my brain with a more rigorous way of thinking 
                                 a problem. The list of courses include:
-                                <ol>
+                                </span>
+                        <ul>
                                         <li>CSE 20</li>
                                         <li>CSE 21</li>
                                         <li>CSE 101</li>
-                                </ol>
-                                </p>
-                                <p>
+                                </ul>
+                                <span>
                                 CSE courses with more programming focus improve my
                                 familarity with various programming languages. After
                                 the series of the programming, I developed the ability
                                 to quickly learn various languages and recognize the
                                 syntax. The list of courses include:
-                                <ol>
+                        </span>
+                        <ul>
                                         <li>CSE 11: <b>Java</b></li>
                                         <li>CSE 12: <b>Java, Junit</b></li>
                                         <li>CSE 30: <b>C, Assembly</b></li>
                                         <li>CSE 100: <b>C++</b></li>
-                                </ol>
-                                </p>
+                                </ul>
+                                <ul>
                                 <li><strong>DSC Courses: </strong></li>
-                                <p>I haven't got chance to take much on DSC, but DSC 10
+                        </ul>
+                        <span>
+                                I haven't got chance to take much on DSC, but DSC 10
                                 really introduced me to what it's like to do data
                                 analysis in <i>Python</i>, and gave me experience using
                                 <b>Pandas</b> and <b>Matlib</b>.
-                                </p>
-                                <canvas id="myCanvas" width="200" height="100"></canvas>
+                        </span>
+                                <ul>
                                 <li><strong>Social Science Courses: </strong></li>
-                                <p>
+                        </ul>
+                        <span>
                                 I love learning about social science! I can almost
                                 imagine myself being a social science major! I 
                                 particularly interested in psychology between different 
                                 individuals and groups of <em>similar minds</em>. 
                                 Social Psyc hoooooray!
-                                </p>
+                                </span>
                                 <figure>
                                         <img src="https://media.makeameme.org/created/one-does-not-a99a1e4840.jpg">
-                                        <figcaption><code>cout &lt&lt SOCIAL PSYC &lt&lt endl</code></figcaption>
+                                        <figcaption><code>cout &lt;&lt; SOCIAL PSYC &lt;&lt; endl</code></figcaption>
                                 </figure>
-                        </ul>
                      </div>
+                     <canvas id="myCanvas" width="200" height="100"></canvas>
                 </section>
              <section>
                      <h1>Project Experience</h1>
@@ -163,13 +164,14 @@
                      </ol>
                      <div>
                              <h4>Here is a short intro video of our app</h4>
-                             <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rj4TJJQNFI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                             <source src="https://youtu.be/3Rj4TJJQNFI" type="video">
+                             <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rj4TJJQNFI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                              <h4>Find out more on our development process through the presentation!</h4>
+                             <a href="https://github.com/xxwwyytt1/Degree-Planner/blob/master/Quaranteam%20Presentation.pdf" target="_blank"><img src="AppStartPage.png" alt="" />
                              <picture>
-                                     <source  srcset="App Logo.png">
-                                     <a href="https://github.com/xxwwyytt1/Degree-Planner/blob/master/Quaranteam%20Presentation.pdf" target="_blank"><img src="App Start Page.png" alt="" /></a>
+                                     <source  srcset="Logo.png">
+                                        <img src="Logo.png" alt="">
                              </picture>
+                        </a>
                         </div>
              </section>
              <section>
@@ -181,7 +183,7 @@
                         <video controls width="500">
 
                                 <source src="https://fb.watch/32f_FI_jOK/"
-                                        type="video">
+                                        type="video/wem">
                             
                                 Sorry, your browser doesn't support embedded videos.
                         </video>
@@ -192,14 +194,14 @@
                         <video controls width="500">
 
                                 <source src="Demo.mov"
-                                        type="video">
+                                        type="video/mov">
                             
                                 Sorry, your browser doesn't support embedded videos.
                         </video>
                         <svg viewBox="0 0 10 10" x="200" width="100">
                                 <circle cx="5" cy="5" r="4" />
                         </svg>
-                        <audio controls src="Costa Verde East Village.m4a">
+                        <audio controls src="Audio.m4a">
                         Your browser does not support the
                         <code>audio</code> element.
                         </audio>
@@ -208,8 +210,8 @@
                         <caption>Events We Host</caption>
                         <colgroup>
                             <col>
-                            <col span="2">
-                            <col span="2">
+                            <col span="1">
+                            <col span="1">
                         </colgroup>
                         <tr>
                             <td> </td>
