@@ -104,6 +104,9 @@ audio {
 div[id="courses"] {
         min-width: 50%;
 }
+#project {
+        color:blueviolet;
+}
 #projectTitle {
         width: 20%;
         display: block;
