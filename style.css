@@ -120,20 +120,3 @@ footer {
         position: absolute;
         display: inline;
 }
-
-@media screen and (max-width: 1200px) {
-        form {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-                justify-self: center;
-                font-size: 15pt;
-                background-color: #08E;
-                padding: 2% 1% 2% 1%;
-        }
-        form > div {
-                display: block;
-                width:50%;
-                margin: auto;
-        }
-}
