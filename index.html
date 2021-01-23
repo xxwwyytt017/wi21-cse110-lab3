@@ -3,22 +3,27 @@
         <title>My GitHub Page built with HTML</title>
         <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
+        <style>
+                h1 {
+                        text-align: center;
+                }
+        </style>
 </head>
 <body>
      <main property="s">
-             <header>
-                <nav>
-                        <aside>My Links: </aside>
-                        <a href="https://www.linkedin.com/in/xiaowang-aven-huang-2095b519a/" target="_blank">My LinkedIn</a>
-                        <a href="https://github.com/xxwwyytt1" target="_blank">My GitHub Profile</a>
+             <header class="headerInFlex">
+                <nav id="headerElem">
+                        <aside id="navElem">My Links: </aside>
+                        <a id="navElem" href="https://www.linkedin.com/in/xiaowang-aven-huang-2095b519a/" target="_blank">My LinkedIn</a>
+                        <a id="navElem" href="https://github.com/xxwwyytt1" target="_blank">My GitHub Profile</a>
                 </nav>
-                <h1>Aven Huang's Page</h1>
-                <h2>Create Date: Jan 15 2021</h2>
-                <div>My motto: <pre>Work hard, play hard</pre></div>
+                <h1 id="headerElem" class="pageTitle">Aven Huang's Page</h1>
+                <h2 id="headerElem">Create Date: Jan 15 2021</h2>
+                <div id="headerElem">My motto: <pre>Work hard, play hard</pre></div>
              </header> 
              <section id="AboutMe">
                      <div>
-                        <h1>About Me</h1>
+                        <h1 class="sectionTitle">About Me</h1>
                         <p>
                              Hi! My name is Aven Huang, currently a sophomore
                              college student major in Data Science. The most 
@@ -31,14 +36,23 @@
                 </div>
                 <div>
                         <form>
+                                <div>
                                 <label >Full Name: </label><br>
                                 <input type="text"><br>
+                                </div>
+                                <div>
                                 <label >Major:</label><br>
                                 <input type="text"><br>
+                                </div>
+                                <div>
                                 <label >Email:</label><br>
                                 <input type="email"><br>
+                                </div>
+                        <div>
                                 <label>Phone Number: </label><br>
                                 <input type="tel"><br>
+                        </div>
+                        <div>
                                 <label>Seleted your current grade level</label><br>
                                 <select name="grade level">
                                         <option value="">--Please choose an option--</option>
@@ -46,8 +60,12 @@
                                         <option value="grad">Graduate</option>
                                         <option value="industryP">Industry Professional</option>
                                 </select><br>
+                        </div>
+                        <div>
                                 <label>Graduation Date: </label><br>
                                 <input type="month"><br>
+                        </div>
+                        <div>
                                 <label>Interested Area: </label><br>
                                 <input type="checkbox" value="HCI">
                                 <label>Human-Computer Interaction</label><br>
@@ -57,12 +75,16 @@
                                 <label>Game Development</label><br>
                                 <label>Others: </label><br>
                                 <input type="text"><br>
+                        </div>
+                        <div>
                                 <label>Interested Presentation Mode: </label><br>
                                 <input list="pMode"><br>
                                 <datalist id="pMode">
                                         <option>Group Panel</option>
                                         <option>Individual Presentation</option>
                                 </datalist>
+                        </div>
+                        <div>
                                 <fieldset>
                                         <legend>Preference: </legend>
                                         <input type="radio">
@@ -70,6 +92,8 @@
                                         <input type="radio">
                                         <label>Industry</label><br/>
                                 </fieldset>
+                        </div>
+                        <div>
                                 <label>Interested Presentation Topic: </label><br>
                                 <select id="topic-select">
                                         <option>--Select one of the following--</option>
@@ -81,25 +105,35 @@
                                                 <option>Introduce Your Specific Industry</option>
                                                 <option>Industry Standards for Internships and Entry-Levels</option>
                                         </optgroup>
-                                </select><br>
+                                </select>
+                        </div>
+                        <div>
                                 <label>Filling Date</label><br>
                                 <input type="datetime-local"><br>
+                        </div>
+                        <div>
                                 <label>Links: </label><br>
                                 <input type="url"><br>
+                        </div>
+                        <div>
                                 <label>Resume</label><br>
                                 <input type="file"><br>
+                        </div>
+                                <div>
                                 <label>Any Questions/Comments: </label><br>
                                 <textarea rows="5" cols="30"></textarea><br>
+                                </div>
+                        <div>
                                 <input type="reset">
                                 <button type="button">Submit</button>
-                                
+                        </div>
 
                         </form>
                 </div>
              </section>
-             <section>
-                     <div>
-                        <h1>Course Highlight</h1>
+             <section id="courseH">
+                     <div id="courses">
+                        <h1 class="sectionTitle">Course Highlight</h1>
                         <ul>
                                 <li><strong>CSE Courses:</strong></li>
                         </ul>
@@ -152,10 +186,10 @@
                      </div>
                      <canvas id="myCanvas" width="200" height="100"></canvas>
                 </section>
-             <section>
-                     <h1>Project Experience</h1>
+             <section id="project">
+                     <h1 class="sectionTitle">Project Experience</h1>
                      <hr>
-                     <h2>Degree Designer</h2>
+                     <h2 id="projectTitle">Degree Designer</h2>
                      <h3>Role: backend/testing</h3>
                      <ol>
                              <li>A 10-week project under the guidance of Women in Computing aimed at resolving the complicated process of planning courses on different websites for UCSD students</li>
@@ -164,9 +198,11 @@
                      </ol>
                      <div>
                              <h4>Here is a short intro video of our app</h4>
+                             <div>
                              <iframe width="560" height="315" src="https://www.youtube.com/embed/3Rj4TJJQNFI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                              <h4>Find out more on our development process through the presentation!</h4>
-                             <a href="https://github.com/xxwwyytt1/Degree-Planner/blob/master/Quaranteam%20Presentation.pdf" target="_blank"><img src="AppStartPage.png" alt="" />
+                             <a href="https://github.com/xxwwyytt1/Degree-Planner/blob/master/Quaranteam%20Presentation.pdf" target="_blank"><img id="tooBig" src="AppStartPage.png" alt="" />
                              <picture>
                                      <source  srcset="Logo.png">
                                         <img src="Logo.png" alt="">
@@ -175,7 +211,7 @@
                         </div>
              </section>
              <section>
-                <h1>Organization Experience</h1>
+                <h1 class="sectionTitle">Organization Experience</h1>
                 <hr>
                 <div>
                         <h2>Triton LinkedIn Group</h2>
